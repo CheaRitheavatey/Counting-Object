@@ -54,8 +54,32 @@
         - 1: import cv2
         - 2: img = cv2.imread('image.jpg')
         - 3: gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-        
+
     - convert image to black and white:
         - 1: import cv2 
         - 2: img = cv2.imread('image.jpg')
         - 3: ret, thresh = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+    
+    - blur imgage:
+        - 1: import cv2
+        - 2: img = cv2.imread('image.jpg')
+        - 3: blur = cv2.GaussianBlur(img,(5,5),0)
+    
+    - edge detection:
+        - 1: import cv2
+        - 2: img = cv2.imread('image.jpg')
+        - 3: canny = cv2.Canny(img,125,175)
+
+    - dialate image:
+        - 1: import cv2
+        - 2: img = cv2.imread('image.jpg')
+        - 3: kernel = np.ones((5,5),np.uint8)
+        - 4: dialate = cv2.dilate(img,kernel,iterations = 1)
+    
+    - erode image:
+        - 1: import cv2
+        - 2: img = cv2.imread('image.jpg')
+        - 3: kernel = np.ones((5,5),np.uint8)
+        - 4: erode = cv2.erode(img,kernel,iterations = 1)
+    
+    - image transformation:
