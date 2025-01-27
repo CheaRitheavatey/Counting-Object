@@ -83,3 +83,4 @@
         - 4: erode = cv2.erode(img,kernel,iterations = 1)
     
     - image transformation:
+    - conture dectection:
