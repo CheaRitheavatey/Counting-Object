@@ -48,3 +48,14 @@
     - 4: cv2.rectangle(img,(15,25),(200,150),(0,0,255),cv2.FILLED)
     - 5: cv2.circle(img,(400,50),30,(255,255,0),5)
     - 6: cv2.putText(img,'OpenCV',(300,200),cv2.FONT_HERSHEY_COMPLEX,1,(0,150,0),2)
+
+- basic functions in opencv
+    - convert image to grayscale:
+        - 1: import cv2
+        - 2: img = cv2.imread('image.jpg')
+        - 3: gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+        
+    - convert image to black and white:
+        - 1: import cv2 
+        - 2: img = cv2.imread('image.jpg')
+        - 3: ret, thresh = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
